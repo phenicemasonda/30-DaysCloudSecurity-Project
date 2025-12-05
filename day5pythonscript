@@ -1,0 +1,86 @@
+import requests
+import time
+import random
+
+# ----------------------------
+# CONFIGURATION
+# ----------------------------
+cloudfront_url = "https://d26sq0x3m2qkfz.cloudfront.net"
+alb_url = "http://awf-test-alb-1856728256.af-south-1.elb.amazonaws.com"
+
+nigerian_ip_pool = [
+    "102.89.23." + str(random.randint(10, 240)),
+    "102.91.56." + str(random.randint(10, 240)),
+    "105.112.45." + str(random.randint(10, 240)),  # Nigeria (MTN)
+]
+
+headers_template = {
+    "User-Agent": "WAF-Testing-Agent",
+}
+
+
+# ----------------------------
+# Helper: Perform a request
+# ----------------------------
+def send_test_request(url, ip):
+    headers = headers_template.copy()
+    headers["X-Forwarded-For"] = ip  # simulate Nigerian source IP
+
+    try:
+        r = requests.get(url, headers=headers, timeout=5)
+        snippet = r.text[:200].replace("\n", " ")
+
+        print(f"[{url}] IP={ip} STATUS={r.status_code}")
+        print(f"Response: {snippet}")
+        print("-" * 60)
+
+        log_entry = (
+            f"URL: {url}\n"
+            f"IP: {ip}\n"
+            f"Status: {r.status_code}\n"
+            f"Body: {snippet}\n"
+            f"{'-'*80}\n"
+        )
+
+        with open("waf_test_log.txt", "a") as f:
+            f.write(log_entry)
+
+    except Exception as e:
+        print(f"ERROR requesting {url}: {e}")
+
+
+# ----------------------------
+# Test CloudFront (WAF ACTIVE)
+# ----------------------------
+def test_cloudfront():
+    print("\n===== TESTING CLOUDFRONT (WAF APPLIED) =====\n")
+
+    for i in range(15):  # enough to trigger rate-based rule
+        ip = random.choice(nigerian_ip_pool)
+        send_test_request(cloudfront_url, ip)
+        time.sleep(0.5)  # increase pressure to trigger rate-limit
+
+
+# ----------------------------
+# Test ALB (NO WAF HERE)
+# ----------------------------
+def test_alb():
+    print("\n===== TESTING ALB (NO WAF ON THIS PATH) =====\n")
+
+    for i in range(10):
+        ip = random.choice(nigerian_ip_pool)
+        send_test_request(alb_url, ip)
+        time.sleep(0.5)
+
+
+# ----------------------------
+# MAIN
+# ----------------------------
+if __name__ == "__main__":
+    print("Starting CloudFront WAF Test...\n")
+    test_cloudfront()
+
+    print("Starting ALB Test...\n")
+    test_alb()
+
+    print("\nTests Complete. Check waf_test_log.txt for full output.\n")
