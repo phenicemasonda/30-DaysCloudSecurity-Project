@@ -1,0 +1,33 @@
+name: OIDC AWS Deployment
+
+on:
+  push:
+    branches:
+      - main # Must match the branch in IAM Trust Policy
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write   # Required for OIDC
+      contents: read    # Required to read repo contents
+
+    steps:
+      # 1. Checkout the repository so files are available
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Configure AWS Credentials using the OIDC role
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: af-south-1   # Use your bucket's region
+
+      # 3. Attempt to create a folder and upload the file
+      - name: Attempt S3 Upload
+        continue-on-error: true
+        run: |
+          echo "Creating folder prefix 'golovin-file/' in S3..."
+          aws s3 cp S3-Policy-Enforcement-and-SSE-KMS-Lab.pdf.crdownload s3://centralized-sec-log/golovin-file/S3-Policy-Enforcement-and-SSE-KMS-Lab.pdf.crdownload
+          echo "Upload attempted. Expected to fail due to trust relationship."
