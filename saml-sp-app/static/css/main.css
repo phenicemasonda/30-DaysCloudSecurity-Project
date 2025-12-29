@@ -1,0 +1,17 @@
+/* static/css/main.css */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+}
+
+.brand-title {
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.secure-badge {
+    background-color: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    color: #10b981;
+}

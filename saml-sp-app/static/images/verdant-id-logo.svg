@@ -1,0 +1,14 @@
+<svg width="240" height="60" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="60" rx="8" fill="#0f172a"/>
+
+  <circle cx="30" cy="30" r="14" fill="#22c55e"/>
+  <circle cx="30" cy="30" r="7" fill="#0f172a"/>
+
+  <text x="60" y="38"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="20"
+        font-weight="700"
+        fill="#e5e7eb">
+    Verdant Secure ID
+  </text>
+</svg>

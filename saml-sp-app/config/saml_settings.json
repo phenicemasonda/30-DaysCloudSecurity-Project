@@ -1,0 +1,47 @@
+{
+  "strict": true,
+  "debug": false,
+
+  "sp": {
+    "entityId": "http://localhost:5000/saml/metadata",
+
+    "assertionConsumerService": {
+      "url": "http://localhost:5000/saml/acs",
+      "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+    },
+
+    "singleLogoutService": {
+      "url": "http://localhost:5000/saml/sls",
+      "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+    },
+
+    "x509cert": "MIIEVTCCAz2gAwIBAgIURtfs5msr+yfxQR8+4Iew3B1IlugwDQYJKoZIhvcNAQELBQAwgbkxCzAJBgNVBAYTAk5HMQ4wDAYDVQQIDAVMQUdPUzEOMAwGA1UEBwwFSVNPTE8xIjAgBgNVBAoMGVZFUkRBTlQgU0VDVVJFIElEIEdBVEVXQVkxGTAXBgNVBAsMEElERU5USVRZIFNFUlZJQ0UxIjAgBgNVBAMMGVZFUkRBTlQgU0VDVVJFIElEIEdBVEVXQVkxJzAlBgkqhkiG9w0BCQEWGFBIRU5JQ0VNQVNPTkRBQEdNQUlMLkNPTTAeFw0yNTEyMjUxNjQxMTRaFw0yNjEyMjUxNjQxMTRaMIG5MQswCQYDVQQGEwJORzEOMAwGA1UECAwFTEFHT1MxDjAMBgNVBAcMBUlTT0xPMSIwIAYDVQQKDBlWRVJEQU5UIFNFQ1VSRSBJRCBHQVRFV0FZMRkwFwYDVQQLDBBJREVOVElUWSBTRVJWSUNFMSIwIAYDVQQDDBlWRVJEQU5UIFNFQ1VSRSBJRCBHQVRFV0FZMScwJQYJKoZIhvcNAQkBFhhQSEVOSUNFTUFTT05EQUBHTUFJTC5DT00wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQChPwGFjF3wZ4V/7uZm4WKv5rnXvO/u26FwsqF0NsCQITj+rQOx3ZIsyq8VSq+kwmjv2M1u0/RVzYnLE8atY5uzaRXQeRlqxF1WxOox/ZWOO9Kw5BI67MIuGLWeEFdrvAy4+MVMO2YrVnOvp6J4EcvVeXLgi5l7WZfCMiDp40nkXGbTrwmCYJb2Sj3igWY/iopFbZgC2mxYC1nmGHOEsYa5PtJd2oA8Q7datP9LH+IECYl1i6uMu9CzWkrJm7hwQFZOtiv2scgouW/7fcKY349a4N7l18tttVOlcbEZrzG7xFk2NR9NXeaSZZj7Bvj/Y2EpidzvCi30mzJSmg/ctIjnAgMBAAGjUzBRMB0GA1UdDgQWBBQ2K6fxkREkt36/uMa9KhE3rLxDtTAfBgNVHSMEGDAWgBQ2K6fxkREkt36/uMa9KhE3rLxDtTAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQCQUZAuO0nxNsbWjEK+o5hOpbg1Z7si1m/0hV/WmWY7rZlGcIFBbNTCGdRTnnij1YuRQbMgKePn60H3QC4ty0TAugZLociB0lapFfKPfLMzMkHARr6AiT0+zPpZZf8oA6gVqnWBIx4NRxiciY3fQGLyK6SASUIqyZnlvQqcNEqfy4YnpGDOxkVYbOz07odn12ByIbKFypJh8U+oM+mmjtA7hltcSZh5Xou73EQvnzQwn8/QyppHsxeAVqN5PvsuQ9JngsGeDUbeDMnz+XI2M7DdFo2/Q9TJK/nxE1gk92kFVQ36LBLyS18kyeRCTkzT1V4je/cKr4QJPblLqt1XpEsu",
+
+    "privateKey": "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQChPwGFjF3wZ4V/7uZm4WKv5rnXvO/u26FwsqF0NsCQITj+rQOx3ZIsyq8VSq+kwmjv2M1u0/RVzYnLE8atY5uzaRXQeRlqxF1WxOox/ZWOO9Kw5BI67MIuGLWeEFdrvAy4+MVMO2YrVnOvp6J4EcvVeXLgi5l7WZfCMiDp40nkXGbTrwmCYJb2Sj3igWY/iopFbZgC2mxYC1nmGHOEsYa5PtJd2oA8Q7datP9LH+IECYl1i6uMu9CzWkrJm7hwQFZOtiv2scgouW/7fcKY349a4N7l18tttVOlcbEZrzG7xFk2NR9NXeaSZZj7Bvj/Y2EpidzvCi30mzJSmg/ctIjnAgMBAAECggEARmsqsfUcLVo4bieaDYIOxD0iGjqUGh9mwL3yTrt+mzM3HdnXTD00kkUt80F7tZuFkoF/LhB4m2Q48iw/zwc6Pz78XOAWHo+FJ9i1YoGZZ9VubPwdjghJwTHfVxlR5GXqtHlISMOEGhcWTLcL+B3lg+QXLEMrEziMUy3rO9mcMpMKiG3gTrOIqQnwlkyahCPw99FaJ3FNawrDtr1PMw5u8fm0ViFyRWNfvLD5m23vY3h2H3lkqxboB8Fx5HcwOSAq1gL/PZoU1VSpDLZ9ELG6QY05r0o3pJlWG7JeaC084EosH8hsHMpaADN1CPKu5rxZjSwUR/FU2/IcB4B4qcdywQKBgQDNhVHquVvS0xa+0IPKlpHhVVaHW9yEXlkkRkDZ0e/v0WdMoJ9U0RHR7lKZrtA35iALb++/iPAnnUwd5sp8zbqX68uWqxWIopoHBjtZ0qvQr+Qs3J+xsCHrBcFGzURmEGJKiugpJ3tRZ4F3OospMZ6lwXtn2SoC6aRStOvGlfNThwKBgQDI2cutKId6QomJY9uYBZ06fA82SJi8gtTPFJFFPb9vEDGOBfOjEg6wiLkaH97nL6Z73er0P5WSd/UZIOHhpEERfOtggjRfOnmMkAw8Co7F8jwJxI/rBnAQDiPnyywvCbYK0stpHAh25PxlZ4GnYUK/j5y9+5de6xhu9Gk03y03oQKBgQCvkoxnnJAwK/rLajCcekMHoDK6kiRxxHQcxBOUwX9bfaXk1XcoKy8xC4rvFWN1zZdkjezf0Klw/jTPeqFTOyGDtYGIJoHP5zD0fUNoucvkDM898ABQ+OoQ8CqsRKGBG9AMZFxvA/aalXUJmS7XMzeX3RGCpwf30wd5TGv7i5CCswKBgQCRe+kjiTrw3SdgxFs4t8BWr6wZJuazjZT2VrCPVhXHLhSnCjqbQSYwyyhA+xrrnMFb8bgRqcj+6jM4O3BCkEatky2vn0CuRd3rah/ikccvLLI+ZQnWNLiReJybdriPbdpV5rB+d1bOQDluflYU1seRmEXx+z5++42cOR/Hs2y+YQKBgD013siEtoLhGpxAQSWwMvcpkt5ihZRcehclQiGpc7myZMiJG1BcuGwXt62b9CgaSTTQq6Tl+rXoXjHuld0+9HmGFaLaTmMbSZNxKtBORAFLx5r5IQoSVKuk8Two7+B72EtjIkKJPN73Uzc/kEYMbwTjLkTVE6XbpfFd5ZZEiPQw"
+  },
+
+  "idp": {
+    "entityId": "https://portal.sso.af-south-1.amazonaws.com/saml/assertion/ODM5NzU0NDkwMDY1X2lucy02Njk1ZGUyMTI5ODFhMGUz",
+
+    "singleSignOnService": {
+      "url": "https://portal.sso.af-south-1.amazonaws.com/saml/assertion/ODM5NzU0NDkwMDY1X2lucy02Njk1ZGUyMTI5ODFhMGUz",
+      "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+    },
+
+    "singleLogoutService": {
+      "url": "https://portal.sso.af-south-1.amazonaws.com/saml/assertion/ODM5NzU0NDkwMDY1X2lucy02Njk1ZGUyMTI5ODFhMGUz",
+      "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+    },
+
+    "x509cert": "MIIDBzCCAe+gAwIBAgIFAKtoLvcwDQYJKoZIhvcNAQELBQAwRTEWMBQGA1UEAwwNYW1hem9uYXdzLmNvbTENMAsGA1UECwwESURBUzEPMA0GA1UECgwGQW1hem9uMQswCQYDVQQGEwJVUzAeFw0yNTEyMjEwOTU0MDBaFw0zMDEyMjEwOTU0MDBaMEUxFjAUBgNVBAMMDWFtYXpvbmF3cy5jb20xDTALBgNVBAsMBElEQVMxDzANBgNVBAoMBkFtYXpvbjELMAkGA1UEBhMCVVMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDGLYEA7SlnL4Ilon/ebwNQ22Vme7xMsxlkLFPTovSh02SlHGbVRm/dA+8RCDvdu2dz3ERBLvXMiR7Z2xD+B25ybOeVK1Rjm8GTzqcn7NecN5Lb7pzZWVNr388Tkl9wchzpsIAhiHQw8JTkKeFc3dY0TSDrc/z9J5h7SCKDgCdPuACIqOiS3G94oxrZir30Hxqq/jqQdNnpNrGjRPwYoMwqL/2FqH3DXQ+CCPk5/A6WNWsx7AWFIBxr7vYjK72LIprNNqb7Jn4ukqRaL2I4Jp1ucreDphhz8ztRagaZXpfVC+UykPpH42VRL8v8E2CkL/X0CQeJieOAQgLR+eUMF1fNAgMBAAE"
+  },
+
+  "security": {
+    "authnRequestsSigned": true,
+    "wantAssertionsSigned": true,
+    "wantMessagesSigned": true,
+    "wantNameIdEncrypted": false,
+    "signatureAlgorithm": "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256",
+    "digestAlgorithm": "http://www.w3.org/2001/04/xmlenc#sha256"
+  }
+}

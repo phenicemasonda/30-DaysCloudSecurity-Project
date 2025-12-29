@@ -1,0 +1,28 @@
+/* static/css/style.css */
+
+.card {
+    border-radius: 1.5rem;
+    background: white;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+}
+
+.btn-primary {
+    background-color: #0f172a;
+    color: white;
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background-color: #020617;
+}
+
+.table-secure {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-secure th,
+.table-secure td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+}

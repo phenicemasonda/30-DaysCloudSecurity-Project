@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Audit Logs{% endblock %}
+
+{% block content %}
+<div class="min-h-screen p-10">
+
+    <h1 class="text-3xl font-bold mb-6">User Activity Logs</h1>
+
+    <div class="overflow-x-auto bg-white rounded-xl shadow">
+        <table class="min-w-full text-sm">
+            <thead class="bg-slate-100">
+                <tr>
+                    <th class="px-6 py-3 text-left">Email</th>
+                    <th class="px-6 py-3 text-left">Timestamp</th>
+                    <th class="px-6 py-3 text-left">IP Address</th>
+                    <th class="px-6 py-3 text-left">Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for log in logs %}
+                <tr class="border-t">
+                    <td class="px-6 py-3">{{ log.email }}</td>
+                    <td class="px-6 py-3">{{ log.timestamp }}</td>
+                    <td class="px-6 py-3">{{ log.ip }}</td>
+                    <td class="px-6 py-3">{{ log.role }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+</div>
+{% endblock %}

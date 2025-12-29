@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAML 2.0 Service Provider | Secure Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .spinner {
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 2px solid #fff;
+            width: 20px;
+            height: 20px;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .hidden { display: none; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+
+<div class="flex flex-col md:flex-row min-h-screen">
+
+    <!-- Left Branding Section -->
+    <div class="w-full md:w-1/2 bg-[#0f172a] text-white flex flex-col justify-center p-8 md:p-16 lg:p-24 relative overflow-hidden">
+
+        <!-- Glow Decor -->
+        <div class="absolute top-[-20%] left-[-10%] w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-[-10%] right-[-5%] w-64 h-64 bg-blue-500/10 rounded-full blur-[100px]"></div>
+
+        <div class="relative z-10">
+
+            <!-- Gate / Door Logo -->
+            <div class="mb-8 flex items-center gap-4">
+                <div class="p-3 rounded-2xl bg-emerald-500/10 border border-emerald-500/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 21h16M6 21V5a2 2 0 012-2h8a2 2 0 012 2v16M10 21V12h4v9" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold tracking-widest uppercase mb-8">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                Verdant Secure ID Gateway
+            </div>
+
+            <h1 class="text-4xl lg:text-7xl font-extrabold leading-tight mb-8">
+                SAML 2.0 <br/>
+                <span class="text-emerald-500">Service Provider</span>
+            </h1>
+
+            <p class="text-slate-400 text-lg lg:text-xl max-w-lg leading-relaxed mb-10">
+                Enterprise-grade Single Sign-On (SSO) integration. Seamlessly connect your Identity Provider to our secure ecosystem.
+            </p>
+
+            <!-- Status Cards -->
+            <div class="grid grid-cols-2 gap-4 max-w-sm">
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                    <div class="text-emerald-500 font-bold text-xl">99.9%</div>
+                    <div class="text-slate-500 text-xs uppercase tracking-wider">Uptime SLA</div>
+                </div>
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                    <div class="text-emerald-500 font-bold text-xl">AES-256</div>
+                    <div class="text-slate-500 text-xs uppercase tracking-wider">Encryption</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-auto pt-16 text-slate-500 text-sm flex items-center gap-4">
+            <span>&copy; 2025 Verdant Security</span>
+            <span class="h-1 w-1 bg-slate-700 rounded-full"></span>
+            <a href="#" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+        </div>
+    </div>
+
+    <!-- Right Form Section (unchanged) -->
+    <div class="w-full md:w-1/2 flex items-center justify-center p-6 bg-white md:bg-slate-50">
+        <!-- unchanged login form -->
+        <!-- intentionally left intact for next iteration -->
+    </div>
+
+</div>
+
+</body>
+</html>

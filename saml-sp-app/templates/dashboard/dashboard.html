@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="min-h-screen p-10">
+
+    <header class="flex justify-between items-center mb-10">
+        <h1 class="text-3xl font-bold">Security Dashboard</h1>
+        <a href="/logout" class="text-sm text-red-600 font-semibold">Logout</a>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="bg-white p-6 rounded-xl shadow">
+            <p class="text-slate-500 text-sm">Authenticated User</p>
+            <p class="text-xl font-bold">{{ user_email }}</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow">
+            <p class="text-slate-500 text-sm">Last Login</p>
+            <p class="text-xl font-bold">{{ last_login }}</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow">
+            <p class="text-slate-500 text-sm">User Role</p>
+            <p class="text-xl font-bold">{{ user_role }}</p>
+        </div>
+
+    </div>
+
+    <div class="mt-10">
+        <a href="/logs"
+           class="inline-block bg-emerald-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-emerald-700">
+            View Activity Logs
+        </a>
+    </div>
+
+</div>
+{% endblock %}

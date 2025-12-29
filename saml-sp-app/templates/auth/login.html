@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}Login | Verdant Secure ID Gateway{% endblock %}
+
+{% block content %}
+<div class="min-h-screen flex">
+
+    <!-- Left Branding Section -->
+    <div class="w-1/2 bg-slate-900 text-white p-16 hidden md:flex flex-col justify-center">
+
+        <!-- Logo -->
+        <img src="{{ url_for('static', filename='images/verdant-id-logo.svg') }}"
+             alt="Verdant Secure ID Gateway"
+             class="w-20 mb-10">
+
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full
+                    bg-emerald-500/10 border border-emerald-500/20
+                    text-emerald-400 text-xs font-bold tracking-widest uppercase mb-8">
+            Verdant Secure ID Gateway
+        </div>
+
+        <h1 class="text-5xl font-extrabold leading-tight">
+            SAML 2.0 <br>
+            <span class="text-emerald-500">Service Provider</span>
+        </h1>
+
+        <p class="mt-6 text-slate-400 max-w-md text-lg">
+            Enterprise-grade Single Sign-On with centralized audit logging and
+            hardened identity boundaries.
+        </p>
+
+        <div class="mt-10 grid grid-cols-2 gap-4 max-w-sm">
+            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                <div class="text-emerald-500 font-bold text-xl">AES-256</div>
+                <div class="text-slate-500 text-xs uppercase">Encryption</div>
+            </div>
+            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                <div class="text-emerald-500 font-bold text-xl">99.9%</div>
+                <div class="text-slate-500 text-xs uppercase">Availability</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Login Section -->
+    <div class="w-full md:w-1/2 flex items-center justify-center p-10 bg-white">
+
+        <div class="w-full max-w-md bg-white p-10 rounded-2xl shadow">
+
+            <h2 class="text-3xl font-bold mb-6 text-slate-900">
+                Sign in
+            </h2>
+
+            <!-- SAML Login Trigger -->
+            <a href="{{ url_for('saml_login') }}"
+               class="block w-full text-center bg-slate-900 text-white
+                      py-3 rounded-xl font-semibold
+                      hover:bg-slate-800 transition">
+                Sign in with Corporate SSO
+            </a>
+
+            <p class="mt-6 text-sm text-slate-500 text-center">
+                Protected by SAML 2.0 • All actions are audited
+            </p>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

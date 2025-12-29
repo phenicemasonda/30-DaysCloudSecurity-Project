@@ -1,0 +1,2 @@
+touch logs/app.log.enc
+chmod 600 logs/app.log.enc

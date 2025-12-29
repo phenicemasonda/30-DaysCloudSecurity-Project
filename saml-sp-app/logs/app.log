@@ -1,0 +1,906 @@
+2025-12-25 09:49:23,943 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.11.169:5000
+2025-12-25 09:49:23,943 INFO [33mPress CTRL+C to quit[0m
+2025-12-25 09:49:25,858 INFO 10.0.1.11 - - [25/Dec/2025 09:49:25] "[32mGET /health HTTP/1.1[0m" 301 -
+2025-12-25 09:49:45,117 INFO 10.0.2.161 - - [25/Dec/2025 09:49:45] "[32mGET /health HTTP/1.1[0m" 301 -
+2025-12-25 09:49:55,887 INFO 10.0.1.11 - - [25/Dec/2025 09:49:55] "[32mGET /health HTTP/1.1[0m" 301 -
+2025-12-25 09:50:15,148 INFO 10.0.2.161 - - [25/Dec/2025 09:50:15] "[32mGET /health HTTP/1.1[0m" 301 -
+2025-12-25 09:50:25,910 INFO 10.0.1.11 - - [25/Dec/2025 09:50:25] "[32mGET /health HTTP/1.1[0m" 301 -
+2025-12-25 09:50:34,943 INFO 127.0.0.1 - - [25/Dec/2025 09:50:34] "[32mGET /health HTTP/1.1[0m" 301 -
+2025-12-25 09:50:45,169 INFO 10.0.2.161 - - [25/Dec/2025 09:50:45] "[32mGET /health HTTP/1.1[0m" 301 -
+2025-12-25 09:50:55,941 INFO 10.0.1.11 - - [25/Dec/2025 09:50:55] "[32mGET /health HTTP/1.1[0m" 301 -
+2025-12-25 09:51:15,190 INFO 10.0.2.161 - - [25/Dec/2025 09:51:15] "[32mGET /health HTTP/1.1[0m" 301 -
+2025-12-25 09:51:25,959 INFO 10.0.1.11 - - [25/Dec/2025 09:51:25] "[32mGET /health HTTP/1.1[0m" 301 -
+2025-12-25 09:51:45,198 INFO 10.0.2.161 - - [25/Dec/2025 09:51:45] "[32mGET /health HTTP/1.1[0m" 301 -
+2025-12-25 09:51:55,988 INFO 10.0.1.11 - - [25/Dec/2025 09:51:55] "[32mGET /health HTTP/1.1[0m" 301 -
+2025-12-25 09:52:15,205 INFO 10.0.2.161 - - [25/Dec/2025 09:52:15] "[32mGET /health HTTP/1.1[0m" 301 -
+2025-12-25 09:52:26,019 INFO 10.0.1.11 - - [25/Dec/2025 09:52:26] "[32mGET /health HTTP/1.1[0m" 301 -
+2025-12-25 09:52:41,641 INFO 127.0.0.1 - - [25/Dec/2025 09:52:41] "[32mGET /index HTTP/1.1[0m" 301 -
+2025-12-25 09:52:45,231 INFO 10.0.2.161 - - [25/Dec/2025 09:52:45] "[32mGET /health HTTP/1.1[0m" 301 -
+2025-12-25 09:52:56,038 INFO 10.0.1.11 - - [25/Dec/2025 09:52:56] "[32mGET /health HTTP/1.1[0m" 301 -
+2025-12-25 09:53:02,452 ERROR 127.0.0.1 - - [25/Dec/2025 09:53:02] code 400, message Bad request version ("\x00H\x13\x02\x13\x03\x13\x01\x13\x04À,À0Ì©Ì¨À\xadÀ+À/À¬À#À'À")
+2025-12-25 09:53:02,453 INFO 127.0.0.1 - - [25/Dec/2025 09:53:02] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x0e-#òï8\x1añôä¡\x90\x8e\x8e\\Ëp\x09Ù$Éuþ1\x1b\x1aõÏâ\x86íñ B\x87ï+wf!\x8dä­¬w:GÖà§¶-\x0cAá\x88øÌþQÏ#ñ\x9d\x1e\x00H\x13\x02\x13\x03\x13\x01\x13\x04À,À0Ì©Ì¨À­À+À/À¬À#À'À[0m" HTTPStatus.BAD_REQUEST -
+2025-12-25 09:53:15,254 INFO 10.0.2.161 - - [25/Dec/2025 09:53:15] "[32mGET /health HTTP/1.1[0m" 301 -
+2025-12-25 09:53:26,062 INFO 10.0.1.11 - - [25/Dec/2025 09:53:26] "[32mGET /health HTTP/1.1[0m" 301 -
+2025-12-25 09:53:45,285 INFO 10.0.2.161 - - [25/Dec/2025 09:53:45] "[32mGET /health HTTP/1.1[0m" 301 -
+2025-12-25 09:53:56,066 INFO 10.0.1.11 - - [25/Dec/2025 09:53:56] "[32mGET /health HTTP/1.1[0m" 301 -
+2025-12-25 09:54:15,286 INFO 10.0.2.161 - - [25/Dec/2025 09:54:15] "[32mGET /health HTTP/1.1[0m" 301 -
+2025-12-25 09:54:26,094 INFO 10.0.1.11 - - [25/Dec/2025 09:54:26] "[32mGET /health HTTP/1.1[0m" 301 -
+2025-12-25 10:34:20,545 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.11.169:5000
+2025-12-25 10:34:20,546 INFO [33mPress CTRL+C to quit[0m
+2025-12-25 10:34:27,981 INFO 10.0.1.11 - - [25/Dec/2025 10:34:27] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:34:47,104 INFO 10.0.2.161 - - [25/Dec/2025 10:34:47] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:34:57,982 INFO 10.0.1.11 - - [25/Dec/2025 10:34:57] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:35:17,134 INFO 10.0.2.161 - - [25/Dec/2025 10:35:17] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:35:28,010 INFO 10.0.1.11 - - [25/Dec/2025 10:35:28] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:35:47,162 INFO 10.0.2.161 - - [25/Dec/2025 10:35:47] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:35:58,021 INFO 10.0.1.11 - - [25/Dec/2025 10:35:58] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:36:03,458 INFO 127.0.0.1 - - [25/Dec/2025 10:36:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:36:12,818 INFO 127.0.0.1 - - [25/Dec/2025 10:36:12] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:36:17,171 INFO 10.0.2.161 - - [25/Dec/2025 10:36:17] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:36:28,051 INFO 10.0.1.11 - - [25/Dec/2025 10:36:28] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:36:47,201 INFO 10.0.2.161 - - [25/Dec/2025 10:36:47] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:36:58,062 INFO 10.0.1.11 - - [25/Dec/2025 10:36:58] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:37:17,213 INFO 10.0.2.161 - - [25/Dec/2025 10:37:17] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:37:28,090 INFO 10.0.1.11 - - [25/Dec/2025 10:37:28] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:37:47,214 INFO 10.0.2.161 - - [25/Dec/2025 10:37:47] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:37:58,094 INFO 10.0.1.11 - - [25/Dec/2025 10:37:58] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:38:17,245 INFO 10.0.2.161 - - [25/Dec/2025 10:38:17] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:38:28,100 INFO 10.0.1.11 - - [25/Dec/2025 10:38:28] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:38:47,258 INFO 10.0.2.161 - - [25/Dec/2025 10:38:47] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:38:58,126 INFO 10.0.1.11 - - [25/Dec/2025 10:38:58] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:39:12,738 INFO 93.174.93.12 - - [25/Dec/2025 10:39:12] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 10:39:17,289 INFO 10.0.2.161 - - [25/Dec/2025 10:39:17] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:39:28,157 INFO 10.0.1.11 - - [25/Dec/2025 10:39:28] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:39:47,319 INFO 10.0.2.161 - - [25/Dec/2025 10:39:47] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:39:58,166 INFO 10.0.1.11 - - [25/Dec/2025 10:39:58] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:40:17,350 INFO 10.0.2.161 - - [25/Dec/2025 10:40:17] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:40:28,194 INFO 10.0.1.11 - - [25/Dec/2025 10:40:28] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:40:47,381 INFO 10.0.2.161 - - [25/Dec/2025 10:40:47] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:40:58,224 INFO 10.0.1.11 - - [25/Dec/2025 10:40:58] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:50:17,426 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.11.169:5000
+2025-12-25 10:50:17,426 INFO [33mPress CTRL+C to quit[0m
+2025-12-25 10:50:17,747 INFO 10.0.2.161 - - [25/Dec/2025 10:50:17] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:50:23,549 INFO 127.0.0.1 - - [25/Dec/2025 10:50:23] "GET /health HTTP/1.0" 200 -
+2025-12-25 10:50:28,674 INFO 10.0.1.11 - - [25/Dec/2025 10:50:28] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:50:47,753 INFO 10.0.2.161 - - [25/Dec/2025 10:50:47] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:50:58,702 INFO 10.0.1.11 - - [25/Dec/2025 10:50:58] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:51:12,169 INFO 105.113.112.91 - - [25/Dec/2025 10:51:12] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 10:51:12,404 ERROR Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ec2-user/saml-sp-app/app.py", line 121, in login
+    auth = init_saml_auth(req)
+  File "/home/ec2-user/saml-sp-app/app.py", line 81, in init_saml_auth
+    return OneLogin_Saml2_Auth(req, saml_settings)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/auth.py", line 57, in __init__
+    self._settings = OneLogin_Saml2_Settings(old_settings, custom_base_path)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/settings.py", line 128, in __init__
+    raise OneLogin_Saml2_Error(
+onelogin.saml2.errors.OneLogin_Saml2_Error: Invalid dict settings: idp_sso_url_invalid
+2025-12-25 10:51:12,405 INFO 105.113.112.91 - - [25/Dec/2025 10:51:12] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2025-12-25 10:51:13,304 INFO 105.113.112.91 - - [25/Dec/2025 10:51:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-25 10:51:17,754 INFO 10.0.2.161 - - [25/Dec/2025 10:51:17] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:51:28,720 INFO 10.0.1.11 - - [25/Dec/2025 10:51:28] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:51:47,773 INFO 10.0.2.161 - - [25/Dec/2025 10:51:47] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:51:58,750 INFO 10.0.1.11 - - [25/Dec/2025 10:51:58] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:52:13,898 INFO 105.113.112.91 - - [25/Dec/2025 10:52:13] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 10:52:14,046 ERROR Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ec2-user/saml-sp-app/app.py", line 121, in login
+    auth = init_saml_auth(req)
+  File "/home/ec2-user/saml-sp-app/app.py", line 81, in init_saml_auth
+    return OneLogin_Saml2_Auth(req, saml_settings)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/auth.py", line 57, in __init__
+    self._settings = OneLogin_Saml2_Settings(old_settings, custom_base_path)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/settings.py", line 128, in __init__
+    raise OneLogin_Saml2_Error(
+onelogin.saml2.errors.OneLogin_Saml2_Error: Invalid dict settings: idp_sso_url_invalid
+2025-12-25 10:52:14,047 INFO 105.113.112.91 - - [25/Dec/2025 10:52:14] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2025-12-25 10:52:17,803 INFO 10.0.2.161 - - [25/Dec/2025 10:52:17] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:52:23,543 INFO 35.203.210.252 - - [25/Dec/2025 10:52:23] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 10:52:23,881 ERROR Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ec2-user/saml-sp-app/app.py", line 121, in login
+    auth = init_saml_auth(req)
+  File "/home/ec2-user/saml-sp-app/app.py", line 81, in init_saml_auth
+    return OneLogin_Saml2_Auth(req, saml_settings)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/auth.py", line 57, in __init__
+    self._settings = OneLogin_Saml2_Settings(old_settings, custom_base_path)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/settings.py", line 128, in __init__
+    raise OneLogin_Saml2_Error(
+onelogin.saml2.errors.OneLogin_Saml2_Error: Invalid dict settings: idp_sso_url_invalid
+2025-12-25 10:52:23,882 INFO 35.203.210.252 - - [25/Dec/2025 10:52:23] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2025-12-25 10:52:25,435 INFO 105.113.112.91 - - [25/Dec/2025 10:52:25] "[33mGET /index HTTP/1.1[0m" 404 -
+2025-12-25 10:52:28,781 INFO 10.0.1.11 - - [25/Dec/2025 10:52:28] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:52:47,812 INFO 10.0.2.161 - - [25/Dec/2025 10:52:47] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:52:58,811 INFO 10.0.1.11 - - [25/Dec/2025 10:52:58] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:53:17,842 INFO 10.0.2.161 - - [25/Dec/2025 10:53:17] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:53:28,841 INFO 10.0.1.11 - - [25/Dec/2025 10:53:28] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:53:47,871 INFO 10.0.2.161 - - [25/Dec/2025 10:53:47] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:53:58,870 INFO 10.0.1.11 - - [25/Dec/2025 10:53:58] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:54:17,890 INFO 10.0.2.161 - - [25/Dec/2025 10:54:17] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:54:28,900 INFO 10.0.1.11 - - [25/Dec/2025 10:54:28] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:54:47,918 INFO 10.0.2.161 - - [25/Dec/2025 10:54:47] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:54:58,926 INFO 10.0.1.11 - - [25/Dec/2025 10:54:58] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:55:17,946 INFO 10.0.2.161 - - [25/Dec/2025 10:55:17] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:55:28,954 INFO 10.0.1.11 - - [25/Dec/2025 10:55:28] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:55:47,974 INFO 10.0.2.161 - - [25/Dec/2025 10:55:47] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:55:58,978 INFO 10.0.1.11 - - [25/Dec/2025 10:55:58] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:56:17,997 INFO 10.0.2.161 - - [25/Dec/2025 10:56:17] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:56:28,991 INFO 10.0.1.11 - - [25/Dec/2025 10:56:28] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:56:48,008 INFO 10.0.2.161 - - [25/Dec/2025 10:56:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:56:59,022 INFO 10.0.1.11 - - [25/Dec/2025 10:56:59] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:57:18,019 INFO 10.0.2.161 - - [25/Dec/2025 10:57:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:57:29,046 INFO 10.0.1.11 - - [25/Dec/2025 10:57:29] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:57:44,979 INFO 79.124.40.174 - - [25/Dec/2025 10:57:44] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 10:57:45,353 ERROR Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ec2-user/saml-sp-app/app.py", line 121, in login
+    auth = init_saml_auth(req)
+  File "/home/ec2-user/saml-sp-app/app.py", line 81, in init_saml_auth
+    return OneLogin_Saml2_Auth(req, saml_settings)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/auth.py", line 57, in __init__
+    self._settings = OneLogin_Saml2_Settings(old_settings, custom_base_path)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/settings.py", line 128, in __init__
+    raise OneLogin_Saml2_Error(
+onelogin.saml2.errors.OneLogin_Saml2_Error: Invalid dict settings: idp_sso_url_invalid
+2025-12-25 10:57:45,354 INFO 79.124.40.174 - - [25/Dec/2025 10:57:45] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2025-12-25 10:57:48,049 INFO 10.0.2.161 - - [25/Dec/2025 10:57:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:57:59,076 INFO 10.0.1.11 - - [25/Dec/2025 10:57:59] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:58:18,070 INFO 10.0.2.161 - - [25/Dec/2025 10:58:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:58:29,105 INFO 10.0.1.11 - - [25/Dec/2025 10:58:29] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:58:48,090 INFO 10.0.2.161 - - [25/Dec/2025 10:58:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:58:59,118 INFO 10.0.1.11 - - [25/Dec/2025 10:58:59] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:59:02,790 INFO 79.124.40.174 - - [25/Dec/2025 10:59:02] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 10:59:03,163 ERROR Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ec2-user/saml-sp-app/app.py", line 121, in login
+    auth = init_saml_auth(req)
+  File "/home/ec2-user/saml-sp-app/app.py", line 81, in init_saml_auth
+    return OneLogin_Saml2_Auth(req, saml_settings)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/auth.py", line 57, in __init__
+    self._settings = OneLogin_Saml2_Settings(old_settings, custom_base_path)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/settings.py", line 128, in __init__
+    raise OneLogin_Saml2_Error(
+onelogin.saml2.errors.OneLogin_Saml2_Error: Invalid dict settings: idp_sso_url_invalid
+2025-12-25 10:59:03,163 INFO 79.124.40.174 - - [25/Dec/2025 10:59:03] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2025-12-25 10:59:18,121 INFO 10.0.2.161 - - [25/Dec/2025 10:59:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:59:29,145 INFO 10.0.1.11 - - [25/Dec/2025 10:59:29] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:59:48,151 INFO 10.0.2.161 - - [25/Dec/2025 10:59:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 10:59:59,168 INFO 10.0.1.11 - - [25/Dec/2025 10:59:59] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:00:18,182 INFO 10.0.2.161 - - [25/Dec/2025 11:00:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:00:29,189 INFO 10.0.1.11 - - [25/Dec/2025 11:00:29] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:00:48,194 INFO 10.0.2.161 - - [25/Dec/2025 11:00:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:00:59,193 INFO 10.0.1.11 - - [25/Dec/2025 11:00:59] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:01:18,198 INFO 10.0.2.161 - - [25/Dec/2025 11:01:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:01:29,194 INFO 10.0.1.11 - - [25/Dec/2025 11:01:29] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:01:48,229 INFO 10.0.2.161 - - [25/Dec/2025 11:01:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:01:59,223 INFO 10.0.1.11 - - [25/Dec/2025 11:01:59] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:02:11,531 INFO 79.124.40.174 - - [25/Dec/2025 11:02:11] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 11:02:11,898 ERROR Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ec2-user/saml-sp-app/app.py", line 121, in login
+    auth = init_saml_auth(req)
+  File "/home/ec2-user/saml-sp-app/app.py", line 81, in init_saml_auth
+    return OneLogin_Saml2_Auth(req, saml_settings)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/auth.py", line 57, in __init__
+    self._settings = OneLogin_Saml2_Settings(old_settings, custom_base_path)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/settings.py", line 128, in __init__
+    raise OneLogin_Saml2_Error(
+onelogin.saml2.errors.OneLogin_Saml2_Error: Invalid dict settings: idp_sso_url_invalid
+2025-12-25 11:02:11,899 INFO 79.124.40.174 - - [25/Dec/2025 11:02:11] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2025-12-25 11:02:18,230 INFO 10.0.2.161 - - [25/Dec/2025 11:02:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:02:29,254 INFO 10.0.1.11 - - [25/Dec/2025 11:02:29] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:02:48,259 INFO 10.0.2.161 - - [25/Dec/2025 11:02:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:02:59,278 INFO 10.0.1.11 - - [25/Dec/2025 11:02:59] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:03:18,276 INFO 10.0.2.161 - - [25/Dec/2025 11:03:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:03:29,309 INFO 10.0.1.11 - - [25/Dec/2025 11:03:29] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:03:48,306 INFO 10.0.2.161 - - [25/Dec/2025 11:03:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:03:59,328 INFO 10.0.1.11 - - [25/Dec/2025 11:03:59] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:04:07,367 INFO 105.113.112.91 - - [25/Dec/2025 11:04:07] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 11:04:07,558 ERROR Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ec2-user/saml-sp-app/app.py", line 121, in login
+    auth = init_saml_auth(req)
+  File "/home/ec2-user/saml-sp-app/app.py", line 81, in init_saml_auth
+    return OneLogin_Saml2_Auth(req, saml_settings)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/auth.py", line 57, in __init__
+    self._settings = OneLogin_Saml2_Settings(old_settings, custom_base_path)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/settings.py", line 128, in __init__
+    raise OneLogin_Saml2_Error(
+onelogin.saml2.errors.OneLogin_Saml2_Error: Invalid dict settings: idp_sso_url_invalid
+2025-12-25 11:04:07,559 INFO 105.113.112.91 - - [25/Dec/2025 11:04:07] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2025-12-25 11:04:09,398 INFO 105.113.112.91 - - [25/Dec/2025 11:04:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-25 11:04:18,318 INFO 10.0.2.161 - - [25/Dec/2025 11:04:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:04:18,484 ERROR Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ec2-user/saml-sp-app/app.py", line 121, in login
+    auth = init_saml_auth(req)
+  File "/home/ec2-user/saml-sp-app/app.py", line 81, in init_saml_auth
+    return OneLogin_Saml2_Auth(req, saml_settings)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/auth.py", line 57, in __init__
+    self._settings = OneLogin_Saml2_Settings(old_settings, custom_base_path)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/settings.py", line 128, in __init__
+    raise OneLogin_Saml2_Error(
+onelogin.saml2.errors.OneLogin_Saml2_Error: Invalid dict settings: idp_sso_url_invalid
+2025-12-25 11:04:18,485 INFO 105.113.112.91 - - [25/Dec/2025 11:04:18] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2025-12-25 11:04:29,347 INFO 10.0.1.11 - - [25/Dec/2025 11:04:29] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:04:48,349 INFO 10.0.2.161 - - [25/Dec/2025 11:04:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:04:56,999 INFO 79.124.40.174 - - [25/Dec/2025 11:04:56] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 11:04:57,373 ERROR Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ec2-user/saml-sp-app/app.py", line 121, in login
+    auth = init_saml_auth(req)
+  File "/home/ec2-user/saml-sp-app/app.py", line 81, in init_saml_auth
+    return OneLogin_Saml2_Auth(req, saml_settings)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/auth.py", line 57, in __init__
+    self._settings = OneLogin_Saml2_Settings(old_settings, custom_base_path)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/settings.py", line 128, in __init__
+    raise OneLogin_Saml2_Error(
+onelogin.saml2.errors.OneLogin_Saml2_Error: Invalid dict settings: idp_sso_url_invalid
+2025-12-25 11:04:57,373 INFO 79.124.40.174 - - [25/Dec/2025 11:04:57] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2025-12-25 11:04:59,378 INFO 10.0.1.11 - - [25/Dec/2025 11:04:59] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:05:18,358 INFO 10.0.2.161 - - [25/Dec/2025 11:05:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:05:29,403 INFO 10.0.1.11 - - [25/Dec/2025 11:05:29] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:05:48,389 INFO 10.0.2.161 - - [25/Dec/2025 11:05:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:05:59,413 INFO 10.0.1.11 - - [25/Dec/2025 11:05:59] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:06:01,151 INFO 79.124.40.174 - - [25/Dec/2025 11:06:01] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 11:06:01,519 ERROR Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ec2-user/saml-sp-app/app.py", line 121, in login
+    auth = init_saml_auth(req)
+  File "/home/ec2-user/saml-sp-app/app.py", line 81, in init_saml_auth
+    return OneLogin_Saml2_Auth(req, saml_settings)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/auth.py", line 57, in __init__
+    self._settings = OneLogin_Saml2_Settings(old_settings, custom_base_path)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/settings.py", line 128, in __init__
+    raise OneLogin_Saml2_Error(
+onelogin.saml2.errors.OneLogin_Saml2_Error: Invalid dict settings: idp_sso_url_invalid
+2025-12-25 11:06:01,520 INFO 79.124.40.174 - - [25/Dec/2025 11:06:01] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2025-12-25 11:06:18,399 INFO 10.0.2.161 - - [25/Dec/2025 11:06:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:06:29,444 INFO 10.0.1.11 - - [25/Dec/2025 11:06:29] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:06:48,412 INFO 10.0.2.161 - - [25/Dec/2025 11:06:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:06:59,474 INFO 10.0.1.11 - - [25/Dec/2025 11:06:59] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:07:18,442 INFO 10.0.2.161 - - [25/Dec/2025 11:07:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:07:27,005 ERROR Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ec2-user/saml-sp-app/app.py", line 121, in login
+    auth = init_saml_auth(req)
+  File "/home/ec2-user/saml-sp-app/app.py", line 81, in init_saml_auth
+    return OneLogin_Saml2_Auth(req, saml_settings)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/auth.py", line 57, in __init__
+    self._settings = OneLogin_Saml2_Settings(old_settings, custom_base_path)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/settings.py", line 128, in __init__
+    raise OneLogin_Saml2_Error(
+onelogin.saml2.errors.OneLogin_Saml2_Error: Invalid dict settings: idp_sso_url_invalid
+2025-12-25 11:07:27,005 INFO 127.0.0.1 - - [25/Dec/2025 11:07:27] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2025-12-25 11:07:29,505 INFO 10.0.1.11 - - [25/Dec/2025 11:07:29] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:07:48,462 INFO 10.0.2.161 - - [25/Dec/2025 11:07:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:07:59,526 INFO 10.0.1.11 - - [25/Dec/2025 11:07:59] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:08:18,493 INFO 10.0.2.161 - - [25/Dec/2025 11:08:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:08:29,554 INFO 10.0.1.11 - - [25/Dec/2025 11:08:29] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:08:48,522 INFO 10.0.2.161 - - [25/Dec/2025 11:08:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:08:59,585 INFO 10.0.1.11 - - [25/Dec/2025 11:08:59] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:09:18,553 INFO 10.0.2.161 - - [25/Dec/2025 11:09:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:09:29,594 INFO 10.0.1.11 - - [25/Dec/2025 11:09:29] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:09:48,582 INFO 10.0.2.161 - - [25/Dec/2025 11:09:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:09:59,620 INFO 10.0.1.11 - - [25/Dec/2025 11:09:59] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:10:18,598 INFO 10.0.2.161 - - [25/Dec/2025 11:10:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:10:29,636 INFO 10.0.1.11 - - [25/Dec/2025 11:10:29] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:10:48,629 INFO 10.0.2.161 - - [25/Dec/2025 11:10:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:10:59,640 INFO 10.0.1.11 - - [25/Dec/2025 11:10:59] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:11:18,632 INFO 10.0.2.161 - - [25/Dec/2025 11:11:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:11:29,671 INFO 10.0.1.11 - - [25/Dec/2025 11:11:29] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:11:48,660 INFO 10.0.2.161 - - [25/Dec/2025 11:11:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:11:59,701 INFO 10.0.1.11 - - [25/Dec/2025 11:11:59] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:12:18,681 INFO 10.0.2.161 - - [25/Dec/2025 11:12:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:12:29,713 INFO 10.0.1.11 - - [25/Dec/2025 11:12:29] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:12:48,710 INFO 10.0.2.161 - - [25/Dec/2025 11:12:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:12:59,744 INFO 10.0.1.11 - - [25/Dec/2025 11:12:59] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:13:18,722 INFO 10.0.2.161 - - [25/Dec/2025 11:13:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:13:29,774 INFO 10.0.1.11 - - [25/Dec/2025 11:13:29] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:13:48,101 INFO 79.124.40.174 - - [25/Dec/2025 11:13:48] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 11:13:48,472 ERROR Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/ec2-user/saml-sp-app/app.py", line 121, in login
+    auth = init_saml_auth(req)
+  File "/home/ec2-user/saml-sp-app/app.py", line 81, in init_saml_auth
+    return OneLogin_Saml2_Auth(req, saml_settings)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/auth.py", line 57, in __init__
+    self._settings = OneLogin_Saml2_Settings(old_settings, custom_base_path)
+  File "/home/ec2-user/.local/lib/python3.9/site-packages/onelogin/saml2/settings.py", line 128, in __init__
+    raise OneLogin_Saml2_Error(
+onelogin.saml2.errors.OneLogin_Saml2_Error: Invalid dict settings: idp_sso_url_invalid
+2025-12-25 11:13:48,473 INFO 79.124.40.174 - - [25/Dec/2025 11:13:48] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2025-12-25 11:13:48,753 INFO 10.0.2.161 - - [25/Dec/2025 11:13:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:13:59,785 INFO 10.0.1.11 - - [25/Dec/2025 11:13:59] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:14:18,773 INFO 10.0.2.161 - - [25/Dec/2025 11:14:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:14:29,811 INFO 10.0.1.11 - - [25/Dec/2025 11:14:29] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:14:33,121 INFO 198.235.24.8 - - [25/Dec/2025 11:14:33] "[32mGET / HTTP/1.0[0m" 302 -
+2025-12-25 11:14:48,802 INFO 10.0.2.161 - - [25/Dec/2025 11:14:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:14:59,841 INFO 10.0.1.11 - - [25/Dec/2025 11:14:59] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:15:18,833 INFO 10.0.2.161 - - [25/Dec/2025 11:15:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:15:29,872 INFO 10.0.1.11 - - [25/Dec/2025 11:15:29] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:15:48,862 INFO 10.0.2.161 - - [25/Dec/2025 11:15:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:15:59,894 INFO 10.0.1.11 - - [25/Dec/2025 11:15:59] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:16:18,877 INFO 10.0.2.161 - - [25/Dec/2025 11:16:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:16:29,922 INFO 10.0.1.11 - - [25/Dec/2025 11:16:29] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:16:48,882 INFO 10.0.2.161 - - [25/Dec/2025 11:16:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:16:59,938 INFO 10.0.1.11 - - [25/Dec/2025 11:16:59] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:17:18,898 INFO 10.0.2.161 - - [25/Dec/2025 11:17:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:17:29,946 INFO 10.0.1.11 - - [25/Dec/2025 11:17:29] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:17:48,926 INFO 10.0.2.161 - - [25/Dec/2025 11:17:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:17:59,977 INFO 10.0.1.11 - - [25/Dec/2025 11:17:59] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:18:18,957 INFO 10.0.2.161 - - [25/Dec/2025 11:18:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:18:30,008 INFO 10.0.1.11 - - [25/Dec/2025 11:18:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:18:48,977 INFO 10.0.2.161 - - [25/Dec/2025 11:18:48] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:19:00,038 INFO 10.0.1.11 - - [25/Dec/2025 11:19:00] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:19:18,988 INFO 10.0.2.161 - - [25/Dec/2025 11:19:18] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:19:30,066 INFO 10.0.1.11 - - [25/Dec/2025 11:19:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:19:49,018 INFO 10.0.2.161 - - [25/Dec/2025 11:19:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:20:00,095 INFO 10.0.1.11 - - [25/Dec/2025 11:20:00] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:20:19,046 INFO 10.0.2.161 - - [25/Dec/2025 11:20:19] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:20:30,096 INFO 10.0.1.11 - - [25/Dec/2025 11:20:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:20:49,049 INFO 10.0.2.161 - - [25/Dec/2025 11:20:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:21:00,104 INFO 10.0.1.11 - - [25/Dec/2025 11:21:00] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:21:19,066 INFO 10.0.2.161 - - [25/Dec/2025 11:21:19] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:21:30,115 INFO 10.0.1.11 - - [25/Dec/2025 11:21:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:21:49,089 INFO 10.0.2.161 - - [25/Dec/2025 11:21:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:22:00,146 INFO 10.0.1.11 - - [25/Dec/2025 11:22:00] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:22:19,110 INFO 10.0.2.161 - - [25/Dec/2025 11:22:19] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:22:30,154 INFO 10.0.1.11 - - [25/Dec/2025 11:22:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:22:49,141 INFO 10.0.2.161 - - [25/Dec/2025 11:22:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:23:00,182 INFO 10.0.1.11 - - [25/Dec/2025 11:23:00] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:23:19,171 INFO 10.0.2.161 - - [25/Dec/2025 11:23:19] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:23:30,205 INFO 10.0.1.11 - - [25/Dec/2025 11:23:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:23:49,174 INFO 10.0.2.161 - - [25/Dec/2025 11:23:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:24:00,235 INFO 10.0.1.11 - - [25/Dec/2025 11:24:00] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:24:19,185 INFO 10.0.2.161 - - [25/Dec/2025 11:24:19] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:24:30,235 INFO 10.0.1.11 - - [25/Dec/2025 11:24:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:24:49,213 INFO 10.0.2.161 - - [25/Dec/2025 11:24:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:24:52,952 INFO 79.124.40.174 - - [25/Dec/2025 11:24:52] "[33mGET /actuator/gateway/routes HTTP/1.1[0m" 404 -
+2025-12-25 11:25:00,266 INFO 10.0.1.11 - - [25/Dec/2025 11:25:00] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:25:19,243 INFO 10.0.2.161 - - [25/Dec/2025 11:25:19] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:25:30,275 INFO 10.0.1.11 - - [25/Dec/2025 11:25:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:25:47,197 INFO 80.82.77.202 - - [25/Dec/2025 11:25:47] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 11:25:47,433 INFO 80.82.77.202 - - [25/Dec/2025 11:25:47] "[33mGET /aaa9 HTTP/1.1[0m" 404 -
+2025-12-25 11:25:48,125 INFO 80.82.77.202 - - [25/Dec/2025 11:25:48] "[33mGET /aab9 HTTP/1.1[0m" 404 -
+2025-12-25 11:25:49,253 INFO 10.0.2.161 - - [25/Dec/2025 11:25:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:25:53,309 INFO 80.82.77.202 - - [25/Dec/2025 11:25:53] "[33mGET /aaa9 HTTP/1.1[0m" 404 -
+2025-12-25 11:25:54,039 INFO 80.82.77.202 - - [25/Dec/2025 11:25:54] "[33mGET /aab9 HTTP/1.1[0m" 404 -
+2025-12-25 11:25:57,578 INFO 204.76.203.219 - - [25/Dec/2025 11:25:57] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 11:26:00,286 INFO 10.0.1.11 - - [25/Dec/2025 11:26:00] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:26:19,282 INFO 10.0.2.161 - - [25/Dec/2025 11:26:19] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:26:30,316 INFO 10.0.1.11 - - [25/Dec/2025 11:26:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:26:49,306 INFO 10.0.2.161 - - [25/Dec/2025 11:26:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:27:00,338 INFO 10.0.1.11 - - [25/Dec/2025 11:27:00] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:27:19,334 INFO 10.0.2.161 - - [25/Dec/2025 11:27:19] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:27:30,369 INFO 10.0.1.11 - - [25/Dec/2025 11:27:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:27:49,363 INFO 10.0.2.161 - - [25/Dec/2025 11:27:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:28:00,383 INFO 10.0.1.11 - - [25/Dec/2025 11:28:00] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:28:19,393 INFO 10.0.2.161 - - [25/Dec/2025 11:28:19] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:28:30,410 INFO 10.0.1.11 - - [25/Dec/2025 11:28:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:28:49,407 INFO 10.0.2.161 - - [25/Dec/2025 11:28:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:29:00,425 INFO 10.0.1.11 - - [25/Dec/2025 11:29:00] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:29:19,414 INFO 10.0.2.161 - - [25/Dec/2025 11:29:19] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:29:30,446 INFO 10.0.1.11 - - [25/Dec/2025 11:29:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:29:49,443 INFO 10.0.2.161 - - [25/Dec/2025 11:29:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:30:00,478 INFO 10.0.1.11 - - [25/Dec/2025 11:30:00] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:30:19,470 INFO 10.0.2.161 - - [25/Dec/2025 11:30:19] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:30:30,490 INFO 10.0.1.11 - - [25/Dec/2025 11:30:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:30:49,486 INFO 10.0.2.161 - - [25/Dec/2025 11:30:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:31:00,516 INFO 10.0.1.11 - - [25/Dec/2025 11:31:00] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:31:19,516 INFO 10.0.2.161 - - [25/Dec/2025 11:31:19] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:31:30,539 INFO 10.0.1.11 - - [25/Dec/2025 11:31:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:31:49,544 INFO 10.0.2.161 - - [25/Dec/2025 11:31:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:32:00,558 INFO 10.0.1.11 - - [25/Dec/2025 11:32:00] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:32:06,110 INFO 79.124.40.174 - - [25/Dec/2025 11:32:06] "[33mGET /actuator/gateway/routes HTTP/1.1[0m" 404 -
+2025-12-25 11:32:19,546 INFO 10.0.2.161 - - [25/Dec/2025 11:32:19] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:32:30,589 INFO 10.0.1.11 - - [25/Dec/2025 11:32:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:32:49,577 INFO 10.0.2.161 - - [25/Dec/2025 11:32:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:33:00,618 INFO 10.0.1.11 - - [25/Dec/2025 11:33:00] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:33:19,591 INFO 10.0.2.161 - - [25/Dec/2025 11:33:19] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:33:30,646 INFO 10.0.1.11 - - [25/Dec/2025 11:33:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:33:49,622 INFO 10.0.2.161 - - [25/Dec/2025 11:33:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:34:00,677 INFO 10.0.1.11 - - [25/Dec/2025 11:34:00] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:34:19,636 INFO 10.0.2.161 - - [25/Dec/2025 11:34:19] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:34:30,707 INFO 10.0.1.11 - - [25/Dec/2025 11:34:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:34:49,665 INFO 10.0.2.161 - - [25/Dec/2025 11:34:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:35:00,738 INFO 10.0.1.11 - - [25/Dec/2025 11:35:00] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:35:10,850 INFO 54.70.65.39 - - [25/Dec/2025 11:35:10] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 11:35:19,696 INFO 10.0.2.161 - - [25/Dec/2025 11:35:19] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:35:30,761 INFO 10.0.1.11 - - [25/Dec/2025 11:35:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:35:49,720 INFO 10.0.2.161 - - [25/Dec/2025 11:35:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:36:00,792 INFO 10.0.1.11 - - [25/Dec/2025 11:36:00] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:36:19,730 INFO 10.0.2.161 - - [25/Dec/2025 11:36:19] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:36:30,823 INFO 10.0.1.11 - - [25/Dec/2025 11:36:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:36:49,761 INFO 10.0.2.161 - - [25/Dec/2025 11:36:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:37:00,854 INFO 10.0.1.11 - - [25/Dec/2025 11:37:00] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:37:19,792 INFO 10.0.2.161 - - [25/Dec/2025 11:37:19] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:37:30,870 INFO 10.0.1.11 - - [25/Dec/2025 11:37:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:37:49,822 INFO 10.0.2.161 - - [25/Dec/2025 11:37:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:38:00,900 INFO 10.0.1.11 - - [25/Dec/2025 11:38:00] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:38:19,853 INFO 10.0.2.161 - - [25/Dec/2025 11:38:19] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:38:30,918 INFO 10.0.1.11 - - [25/Dec/2025 11:38:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:38:49,884 INFO 10.0.2.161 - - [25/Dec/2025 11:38:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:39:00,923 INFO 10.0.1.11 - - [25/Dec/2025 11:39:00] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:39:19,914 INFO 10.0.2.161 - - [25/Dec/2025 11:39:19] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:39:30,950 INFO 10.0.1.11 - - [25/Dec/2025 11:39:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:39:49,942 INFO 10.0.2.161 - - [25/Dec/2025 11:39:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:40:00,978 INFO 10.0.1.11 - - [25/Dec/2025 11:40:00] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:40:19,943 INFO 10.0.2.161 - - [25/Dec/2025 11:40:19] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:40:24,241 INFO 204.76.203.219 - - [25/Dec/2025 11:40:24] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 11:40:30,997 INFO 10.0.1.11 - - [25/Dec/2025 11:40:30] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:40:49,960 INFO 10.0.2.161 - - [25/Dec/2025 11:40:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:41:01,028 INFO 10.0.1.11 - - [25/Dec/2025 11:41:01] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:41:19,982 INFO 10.0.2.161 - - [25/Dec/2025 11:41:19] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:41:20,291 INFO 204.76.203.219 - - [25/Dec/2025 11:41:20] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 11:41:31,054 INFO 10.0.1.11 - - [25/Dec/2025 11:41:31] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:41:49,990 INFO 10.0.2.161 - - [25/Dec/2025 11:41:49] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:41:50,276 INFO 79.124.40.174 - - [25/Dec/2025 11:41:50] "[33mGET /actuator/gateway/routes HTTP/1.1[0m" 404 -
+2025-12-25 11:42:01,082 INFO 10.0.1.11 - - [25/Dec/2025 11:42:01] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:42:20,021 INFO 10.0.2.161 - - [25/Dec/2025 11:42:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:42:31,107 INFO 10.0.1.11 - - [25/Dec/2025 11:42:31] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:42:50,052 INFO 10.0.2.161 - - [25/Dec/2025 11:42:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:43:01,111 INFO 10.0.1.11 - - [25/Dec/2025 11:43:01] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:43:20,082 INFO 10.0.2.161 - - [25/Dec/2025 11:43:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:43:31,138 INFO 10.0.1.11 - - [25/Dec/2025 11:43:31] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:43:50,094 INFO 10.0.2.161 - - [25/Dec/2025 11:43:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:44:01,143 INFO 10.0.1.11 - - [25/Dec/2025 11:44:01] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:44:20,105 INFO 10.0.2.161 - - [25/Dec/2025 11:44:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:44:31,145 INFO 10.0.1.11 - - [25/Dec/2025 11:44:31] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:44:50,130 INFO 10.0.2.161 - - [25/Dec/2025 11:44:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:45:01,163 INFO 10.0.1.11 - - [25/Dec/2025 11:45:01] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:45:20,139 INFO 10.0.2.161 - - [25/Dec/2025 11:45:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:45:31,171 INFO 10.0.1.11 - - [25/Dec/2025 11:45:31] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:45:50,146 INFO 10.0.2.161 - - [25/Dec/2025 11:45:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:46:01,193 INFO 10.0.1.11 - - [25/Dec/2025 11:46:01] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:46:20,177 INFO 10.0.2.161 - - [25/Dec/2025 11:46:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:46:31,223 INFO 10.0.1.11 - - [25/Dec/2025 11:46:31] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:46:50,202 INFO 10.0.2.161 - - [25/Dec/2025 11:46:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:47:01,256 INFO 10.0.1.11 - - [25/Dec/2025 11:47:01] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:47:20,233 INFO 10.0.2.161 - - [25/Dec/2025 11:47:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:47:31,287 INFO 10.0.1.11 - - [25/Dec/2025 11:47:31] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:47:49,287 INFO 61.176.196.107 - - [25/Dec/2025 11:47:49] "[33mPOST /GponForm/diag_Form?images/ HTTP/1.1[0m" 404 -
+2025-12-25 11:47:50,250 INFO 10.0.2.161 - - [25/Dec/2025 11:47:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:48:01,319 INFO 10.0.1.11 - - [25/Dec/2025 11:48:01] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:48:20,257 INFO 10.0.2.161 - - [25/Dec/2025 11:48:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:48:31,346 INFO 10.0.1.11 - - [25/Dec/2025 11:48:31] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:48:50,285 INFO 10.0.2.161 - - [25/Dec/2025 11:48:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:49:01,381 INFO 10.0.1.11 - - [25/Dec/2025 11:49:01] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:49:20,287 INFO 10.0.2.161 - - [25/Dec/2025 11:49:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:49:31,406 INFO 10.0.1.11 - - [25/Dec/2025 11:49:31] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:49:50,314 INFO 10.0.2.161 - - [25/Dec/2025 11:49:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:50:01,422 INFO 10.0.1.11 - - [25/Dec/2025 11:50:01] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:50:20,326 INFO 10.0.2.161 - - [25/Dec/2025 11:50:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:50:31,452 INFO 10.0.1.11 - - [25/Dec/2025 11:50:31] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:50:50,346 INFO 10.0.2.161 - - [25/Dec/2025 11:50:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:51:01,483 INFO 10.0.1.11 - - [25/Dec/2025 11:51:01] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:51:20,374 INFO 10.0.2.161 - - [25/Dec/2025 11:51:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:51:31,502 INFO 10.0.1.11 - - [25/Dec/2025 11:51:31] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:51:50,389 INFO 10.0.2.161 - - [25/Dec/2025 11:51:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:52:01,533 INFO 10.0.1.11 - - [25/Dec/2025 11:52:01] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:52:20,398 INFO 10.0.2.161 - - [25/Dec/2025 11:52:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:52:31,563 INFO 10.0.1.11 - - [25/Dec/2025 11:52:31] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:52:50,422 INFO 10.0.2.161 - - [25/Dec/2025 11:52:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:53:01,594 INFO 10.0.1.11 - - [25/Dec/2025 11:53:01] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:53:20,430 INFO 10.0.2.161 - - [25/Dec/2025 11:53:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:53:31,614 INFO 10.0.1.11 - - [25/Dec/2025 11:53:31] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:53:50,446 INFO 10.0.2.161 - - [25/Dec/2025 11:53:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:54:01,669 INFO 10.0.1.11 - - [25/Dec/2025 11:54:01] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:54:20,470 INFO 10.0.2.161 - - [25/Dec/2025 11:54:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:54:31,694 INFO 10.0.1.11 - - [25/Dec/2025 11:54:31] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:54:50,498 INFO 10.0.2.161 - - [25/Dec/2025 11:54:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:55:01,719 INFO 10.0.1.11 - - [25/Dec/2025 11:55:01] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:55:20,520 INFO 10.0.2.161 - - [25/Dec/2025 11:55:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:55:31,750 INFO 10.0.1.11 - - [25/Dec/2025 11:55:31] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:55:50,550 INFO 10.0.2.161 - - [25/Dec/2025 11:55:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:56:01,781 INFO 10.0.1.11 - - [25/Dec/2025 11:56:01] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:56:20,581 INFO 10.0.2.161 - - [25/Dec/2025 11:56:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:56:31,812 INFO 10.0.1.11 - - [25/Dec/2025 11:56:31] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:56:50,611 INFO 10.0.2.161 - - [25/Dec/2025 11:56:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:57:01,842 INFO 10.0.1.11 - - [25/Dec/2025 11:57:01] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:57:20,642 INFO 10.0.2.161 - - [25/Dec/2025 11:57:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:57:31,870 INFO 10.0.1.11 - - [25/Dec/2025 11:57:31] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:57:50,659 INFO 10.0.2.161 - - [25/Dec/2025 11:57:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:58:01,900 INFO 10.0.1.11 - - [25/Dec/2025 11:58:01] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:58:20,674 INFO 10.0.2.161 - - [25/Dec/2025 11:58:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:58:31,914 INFO 10.0.1.11 - - [25/Dec/2025 11:58:31] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:58:50,703 INFO 10.0.2.161 - - [25/Dec/2025 11:58:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:59:01,968 INFO 10.0.1.11 - - [25/Dec/2025 11:59:01] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:59:20,733 INFO 10.0.2.161 - - [25/Dec/2025 11:59:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:59:31,982 INFO 10.0.1.11 - - [25/Dec/2025 11:59:31] "GET /health HTTP/1.1" 200 -
+2025-12-25 11:59:50,764 INFO 10.0.2.161 - - [25/Dec/2025 11:59:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:00:02,022 INFO 10.0.1.11 - - [25/Dec/2025 12:00:02] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:00:20,794 INFO 10.0.2.161 - - [25/Dec/2025 12:00:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:00:32,026 INFO 10.0.1.11 - - [25/Dec/2025 12:00:32] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:00:50,813 INFO 10.0.2.161 - - [25/Dec/2025 12:00:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:01:02,067 INFO 10.0.1.11 - - [25/Dec/2025 12:01:02] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:01:20,840 INFO 10.0.2.161 - - [25/Dec/2025 12:01:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:01:32,081 INFO 10.0.1.11 - - [25/Dec/2025 12:01:32] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:01:50,867 INFO 10.0.2.161 - - [25/Dec/2025 12:01:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:02:02,115 INFO 10.0.1.11 - - [25/Dec/2025 12:02:02] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:02:20,898 INFO 10.0.2.161 - - [25/Dec/2025 12:02:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:02:32,125 INFO 10.0.1.11 - - [25/Dec/2025 12:02:32] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:02:50,925 INFO 10.0.2.161 - - [25/Dec/2025 12:02:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:03:02,171 INFO 10.0.1.11 - - [25/Dec/2025 12:03:02] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:03:20,956 INFO 10.0.2.161 - - [25/Dec/2025 12:03:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:03:32,194 INFO 10.0.1.11 - - [25/Dec/2025 12:03:32] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:03:43,488 INFO 92.63.197.197 - - [25/Dec/2025 12:03:43] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 12:03:50,972 INFO 10.0.2.161 - - [25/Dec/2025 12:03:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:04:02,215 INFO 10.0.1.11 - - [25/Dec/2025 12:04:02] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:04:20,993 INFO 10.0.2.161 - - [25/Dec/2025 12:04:20] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:04:32,222 INFO 10.0.1.11 - - [25/Dec/2025 12:04:32] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:04:46,965 INFO 79.124.40.174 - - [25/Dec/2025 12:04:46] "[33mGET /geoserver HTTP/1.1[0m" 404 -
+2025-12-25 12:04:50,998 INFO 10.0.2.161 - - [25/Dec/2025 12:04:50] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:05:02,253 INFO 10.0.1.11 - - [25/Dec/2025 12:05:02] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:05:21,029 INFO 10.0.2.161 - - [25/Dec/2025 12:05:21] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:05:32,264 INFO 10.0.1.11 - - [25/Dec/2025 12:05:32] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:05:51,046 INFO 10.0.2.161 - - [25/Dec/2025 12:05:51] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:06:02,211 INFO 101.32.218.31 - - [25/Dec/2025 12:06:02] "[33mHEAD /Core/Skin/Login.aspx HTTP/1.1[0m" 404 -
+2025-12-25 12:06:02,305 INFO 10.0.1.11 - - [25/Dec/2025 12:06:02] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:06:21,074 INFO 10.0.2.161 - - [25/Dec/2025 12:06:21] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:06:32,318 INFO 10.0.1.11 - - [25/Dec/2025 12:06:32] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:06:51,100 INFO 10.0.2.161 - - [25/Dec/2025 12:06:51] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:06:55,904 INFO 79.124.40.174 - - [25/Dec/2025 12:06:55] "[33mGET /geoserver HTTP/1.1[0m" 404 -
+2025-12-25 12:07:02,350 INFO 10.0.1.11 - - [25/Dec/2025 12:07:02] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:07:21,130 INFO 10.0.2.161 - - [25/Dec/2025 12:07:21] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:07:32,381 INFO 10.0.1.11 - - [25/Dec/2025 12:07:32] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:07:51,161 INFO 10.0.2.161 - - [25/Dec/2025 12:07:51] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:08:02,413 INFO 10.0.1.11 - - [25/Dec/2025 12:08:02] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:08:21,192 INFO 10.0.2.161 - - [25/Dec/2025 12:08:21] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:08:32,420 INFO 10.0.1.11 - - [25/Dec/2025 12:08:32] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:08:49,636 INFO 79.124.40.174 - - [25/Dec/2025 12:08:49] "[33mGET /geoserver HTTP/1.1[0m" 404 -
+2025-12-25 12:08:51,218 INFO 10.0.2.161 - - [25/Dec/2025 12:08:51] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:09:02,438 INFO 10.0.1.11 - - [25/Dec/2025 12:09:02] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:09:21,242 INFO 10.0.2.161 - - [25/Dec/2025 12:09:21] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:09:32,452 INFO 10.0.1.11 - - [25/Dec/2025 12:09:32] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:09:51,256 INFO 10.0.2.161 - - [25/Dec/2025 12:09:51] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:10:02,486 INFO 10.0.1.11 - - [25/Dec/2025 12:10:02] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:10:21,264 INFO 10.0.2.161 - - [25/Dec/2025 12:10:21] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:10:32,515 INFO 10.0.1.11 - - [25/Dec/2025 12:10:32] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:10:51,273 INFO 10.0.2.161 - - [25/Dec/2025 12:10:51] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:11:02,534 INFO 10.0.1.11 - - [25/Dec/2025 12:11:02] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:11:21,302 INFO 10.0.2.161 - - [25/Dec/2025 12:11:21] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:11:32,558 INFO 10.0.1.11 - - [25/Dec/2025 12:11:32] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:11:51,330 INFO 10.0.2.161 - - [25/Dec/2025 12:11:51] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:12:02,598 INFO 10.0.1.11 - - [25/Dec/2025 12:12:02] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:12:21,360 INFO 10.0.2.161 - - [25/Dec/2025 12:12:21] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:12:32,606 INFO 10.0.1.11 - - [25/Dec/2025 12:12:32] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:12:42,549 INFO 45.82.78.108 - - [25/Dec/2025 12:12:42] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 12:12:46,950 INFO 45.131.155.110 - - [25/Dec/2025 12:12:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-25 12:12:51,366 INFO 10.0.2.161 - - [25/Dec/2025 12:12:51] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:13:02,618 INFO 10.0.1.11 - - [25/Dec/2025 12:13:02] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:13:21,397 INFO 10.0.2.161 - - [25/Dec/2025 12:13:21] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:13:32,647 INFO 10.0.1.11 - - [25/Dec/2025 12:13:32] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:13:51,426 INFO 10.0.2.161 - - [25/Dec/2025 12:13:51] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:14:02,676 INFO 10.0.1.11 - - [25/Dec/2025 12:14:02] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:14:21,444 INFO 10.0.2.161 - - [25/Dec/2025 12:14:21] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:14:32,686 INFO 10.0.1.11 - - [25/Dec/2025 12:14:32] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:14:51,467 INFO 10.0.2.161 - - [25/Dec/2025 12:14:51] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:15:02,717 INFO 10.0.1.11 - - [25/Dec/2025 12:15:02] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:15:21,497 INFO 10.0.2.161 - - [25/Dec/2025 12:15:21] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:15:32,722 INFO 10.0.1.11 - - [25/Dec/2025 12:15:32] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:15:51,528 INFO 10.0.2.161 - - [25/Dec/2025 12:15:51] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:16:02,726 INFO 10.0.1.11 - - [25/Dec/2025 12:16:02] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:16:21,542 INFO 10.0.2.161 - - [25/Dec/2025 12:16:21] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:16:32,756 INFO 10.0.1.11 - - [25/Dec/2025 12:16:32] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:16:51,572 INFO 10.0.2.161 - - [25/Dec/2025 12:16:51] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:17:02,788 INFO 10.0.1.11 - - [25/Dec/2025 12:17:02] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:17:21,594 INFO 10.0.2.161 - - [25/Dec/2025 12:17:21] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:17:32,818 INFO 10.0.1.11 - - [25/Dec/2025 12:17:32] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:17:51,625 INFO 10.0.2.161 - - [25/Dec/2025 12:17:51] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:18:02,846 INFO 10.0.1.11 - - [25/Dec/2025 12:18:02] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:18:21,656 INFO 10.0.2.161 - - [25/Dec/2025 12:18:21] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:18:32,869 INFO 10.0.1.11 - - [25/Dec/2025 12:18:32] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:18:51,686 INFO 10.0.2.161 - - [25/Dec/2025 12:18:51] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:19:02,898 INFO 10.0.1.11 - - [25/Dec/2025 12:19:02] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:19:21,704 INFO 10.0.2.161 - - [25/Dec/2025 12:19:21] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:19:32,923 INFO 10.0.1.11 - - [25/Dec/2025 12:19:32] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:19:51,730 INFO 10.0.2.161 - - [25/Dec/2025 12:19:51] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:20:02,953 INFO 10.0.1.11 - - [25/Dec/2025 12:20:02] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:20:21,738 INFO 10.0.2.161 - - [25/Dec/2025 12:20:21] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:20:32,966 INFO 10.0.1.11 - - [25/Dec/2025 12:20:32] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:20:51,766 INFO 10.0.2.161 - - [25/Dec/2025 12:20:51] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:21:02,994 INFO 10.0.1.11 - - [25/Dec/2025 12:21:02] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:21:21,787 INFO 10.0.2.161 - - [25/Dec/2025 12:21:21] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:21:33,002 INFO 10.0.1.11 - - [25/Dec/2025 12:21:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:21:51,814 INFO 10.0.2.161 - - [25/Dec/2025 12:21:51] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:22:03,032 INFO 10.0.1.11 - - [25/Dec/2025 12:22:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:22:21,842 INFO 10.0.2.161 - - [25/Dec/2025 12:22:21] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:22:33,063 INFO 10.0.1.11 - - [25/Dec/2025 12:22:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:22:51,850 INFO 10.0.2.161 - - [25/Dec/2025 12:22:51] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:23:03,094 INFO 10.0.1.11 - - [25/Dec/2025 12:23:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:23:21,878 INFO 10.0.2.161 - - [25/Dec/2025 12:23:21] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:23:33,123 INFO 10.0.1.11 - - [25/Dec/2025 12:23:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:23:51,900 INFO 10.0.2.161 - - [25/Dec/2025 12:23:51] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:24:03,127 INFO 10.0.1.11 - - [25/Dec/2025 12:24:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:24:21,906 INFO 10.0.2.161 - - [25/Dec/2025 12:24:21] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:24:33,147 INFO 10.0.1.11 - - [25/Dec/2025 12:24:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:24:51,918 INFO 10.0.2.161 - - [25/Dec/2025 12:24:51] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:25:03,160 INFO 10.0.1.11 - - [25/Dec/2025 12:25:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:25:21,934 INFO 10.0.2.161 - - [25/Dec/2025 12:25:21] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:25:28,780 INFO 80.82.77.202 - - [25/Dec/2025 12:25:28] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 12:25:29,079 INFO 80.82.77.202 - - [25/Dec/2025 12:25:29] "[33mGET /aaa9 HTTP/1.1[0m" 404 -
+2025-12-25 12:25:29,737 INFO 80.82.77.202 - - [25/Dec/2025 12:25:29] "[33mGET /aab9 HTTP/1.1[0m" 404 -
+2025-12-25 12:25:33,166 INFO 10.0.1.11 - - [25/Dec/2025 12:25:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:25:34,999 INFO 80.82.77.202 - - [25/Dec/2025 12:25:34] "[33mGET /aaa9 HTTP/1.1[0m" 404 -
+2025-12-25 12:25:35,707 INFO 80.82.77.202 - - [25/Dec/2025 12:25:35] "[33mGET /aab9 HTTP/1.1[0m" 404 -
+2025-12-25 12:25:51,965 INFO 10.0.2.161 - - [25/Dec/2025 12:25:51] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:26:03,197 INFO 10.0.1.11 - - [25/Dec/2025 12:26:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:26:21,978 INFO 10.0.2.161 - - [25/Dec/2025 12:26:21] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:26:33,228 INFO 10.0.1.11 - - [25/Dec/2025 12:26:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:26:52,009 INFO 10.0.2.161 - - [25/Dec/2025 12:26:52] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:27:03,259 INFO 10.0.1.11 - - [25/Dec/2025 12:27:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:27:22,037 INFO 10.0.2.161 - - [25/Dec/2025 12:27:22] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:27:33,290 INFO 10.0.1.11 - - [25/Dec/2025 12:27:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:27:52,065 INFO 10.0.2.161 - - [25/Dec/2025 12:27:52] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:28:03,321 INFO 10.0.1.11 - - [25/Dec/2025 12:28:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:28:22,091 INFO 10.0.2.161 - - [25/Dec/2025 12:28:22] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:28:33,344 INFO 10.0.1.11 - - [25/Dec/2025 12:28:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:28:52,119 INFO 10.0.2.161 - - [25/Dec/2025 12:28:52] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:29:03,357 INFO 10.0.1.11 - - [25/Dec/2025 12:29:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:29:22,129 INFO 10.0.2.161 - - [25/Dec/2025 12:29:22] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:29:33,386 INFO 10.0.1.11 - - [25/Dec/2025 12:29:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:29:52,146 INFO 10.0.2.161 - - [25/Dec/2025 12:29:52] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:30:03,415 INFO 10.0.1.11 - - [25/Dec/2025 12:30:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:30:11,092 INFO 127.0.0.1 - - [25/Dec/2025 12:30:11] "[32mHEAD /login HTTP/1.1[0m" 302 -
+2025-12-25 12:30:22,174 INFO 10.0.2.161 - - [25/Dec/2025 12:30:22] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:30:33,446 INFO 10.0.1.11 - - [25/Dec/2025 12:30:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:30:52,202 INFO 10.0.2.161 - - [25/Dec/2025 12:30:52] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:31:03,477 INFO 10.0.1.11 - - [25/Dec/2025 12:31:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:31:22,230 INFO 10.0.2.161 - - [25/Dec/2025 12:31:22] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:31:33,508 INFO 10.0.1.11 - - [25/Dec/2025 12:31:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:31:52,254 INFO 10.0.2.161 - - [25/Dec/2025 12:31:52] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:32:03,515 INFO 10.0.1.11 - - [25/Dec/2025 12:32:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:32:22,285 INFO 10.0.2.161 - - [25/Dec/2025 12:32:22] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:32:33,520 INFO 10.0.1.11 - - [25/Dec/2025 12:32:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:32:52,314 INFO 10.0.2.161 - - [25/Dec/2025 12:32:52] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:33:03,551 INFO 10.0.1.11 - - [25/Dec/2025 12:33:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:33:22,342 INFO 10.0.2.161 - - [25/Dec/2025 12:33:22] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:33:33,582 INFO 10.0.1.11 - - [25/Dec/2025 12:33:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:33:52,370 INFO 10.0.2.161 - - [25/Dec/2025 12:33:52] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:34:03,604 INFO 10.0.1.11 - - [25/Dec/2025 12:34:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:34:22,390 INFO 10.0.2.161 - - [25/Dec/2025 12:34:22] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:34:33,606 INFO 10.0.1.11 - - [25/Dec/2025 12:34:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:34:52,418 INFO 10.0.2.161 - - [25/Dec/2025 12:34:52] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:35:03,637 INFO 10.0.1.11 - - [25/Dec/2025 12:35:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:35:22,449 INFO 10.0.2.161 - - [25/Dec/2025 12:35:22] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:35:33,666 INFO 10.0.1.11 - - [25/Dec/2025 12:35:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:35:52,477 INFO 10.0.2.161 - - [25/Dec/2025 12:35:52] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:36:03,689 INFO 10.0.1.11 - - [25/Dec/2025 12:36:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:36:22,503 INFO 10.0.2.161 - - [25/Dec/2025 12:36:22] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:36:33,718 INFO 10.0.1.11 - - [25/Dec/2025 12:36:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:36:52,522 INFO 10.0.2.161 - - [25/Dec/2025 12:36:52] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:37:03,735 INFO 10.0.1.11 - - [25/Dec/2025 12:37:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:37:22,545 INFO 10.0.2.161 - - [25/Dec/2025 12:37:22] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:37:33,746 INFO 10.0.1.11 - - [25/Dec/2025 12:37:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:37:52,574 INFO 10.0.2.161 - - [25/Dec/2025 12:37:52] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:38:03,747 INFO 10.0.1.11 - - [25/Dec/2025 12:38:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:38:22,586 INFO 10.0.2.161 - - [25/Dec/2025 12:38:22] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:38:33,774 INFO 10.0.1.11 - - [25/Dec/2025 12:38:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:38:52,614 INFO 10.0.2.161 - - [25/Dec/2025 12:38:52] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:39:03,793 INFO 10.0.1.11 - - [25/Dec/2025 12:39:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:39:22,634 INFO 10.0.2.161 - - [25/Dec/2025 12:39:22] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:39:33,824 INFO 10.0.1.11 - - [25/Dec/2025 12:39:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:39:52,659 INFO 10.0.2.161 - - [25/Dec/2025 12:39:52] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:40:03,855 INFO 10.0.1.11 - - [25/Dec/2025 12:40:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:40:22,689 INFO 10.0.2.161 - - [25/Dec/2025 12:40:22] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:40:33,860 INFO 10.0.1.11 - - [25/Dec/2025 12:40:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:40:52,720 INFO 10.0.2.161 - - [25/Dec/2025 12:40:52] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:41:03,862 INFO 10.0.1.11 - - [25/Dec/2025 12:41:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:41:22,749 INFO 10.0.2.161 - - [25/Dec/2025 12:41:22] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:41:33,892 INFO 10.0.1.11 - - [25/Dec/2025 12:41:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:41:52,778 INFO 10.0.2.161 - - [25/Dec/2025 12:41:52] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:42:03,923 INFO 10.0.1.11 - - [25/Dec/2025 12:42:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:42:22,786 INFO 10.0.2.161 - - [25/Dec/2025 12:42:22] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:42:33,934 INFO 10.0.1.11 - - [25/Dec/2025 12:42:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:42:52,814 INFO 10.0.2.161 - - [25/Dec/2025 12:42:52] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:43:03,939 INFO 10.0.1.11 - - [25/Dec/2025 12:43:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:43:22,822 INFO 10.0.2.161 - - [25/Dec/2025 12:43:22] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:43:33,943 INFO 10.0.1.11 - - [25/Dec/2025 12:43:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:43:52,824 INFO 10.0.2.161 - - [25/Dec/2025 12:43:52] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:44:03,974 INFO 10.0.1.11 - - [25/Dec/2025 12:44:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:44:22,854 INFO 10.0.2.161 - - [25/Dec/2025 12:44:22] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:44:33,983 INFO 10.0.1.11 - - [25/Dec/2025 12:44:33] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:44:52,882 INFO 10.0.2.161 - - [25/Dec/2025 12:44:52] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:45:03,985 INFO 10.0.1.11 - - [25/Dec/2025 12:45:03] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:45:22,913 INFO 10.0.2.161 - - [25/Dec/2025 12:45:22] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:45:34,016 INFO 10.0.1.11 - - [25/Dec/2025 12:45:34] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:45:52,944 INFO 10.0.2.161 - - [25/Dec/2025 12:45:52] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:46:04,047 INFO 10.0.1.11 - - [25/Dec/2025 12:46:04] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:46:22,974 INFO 10.0.2.161 - - [25/Dec/2025 12:46:22] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:46:34,051 INFO 10.0.1.11 - - [25/Dec/2025 12:46:34] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:46:53,006 INFO 10.0.2.161 - - [25/Dec/2025 12:46:53] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:47:04,073 INFO 10.0.1.11 - - [25/Dec/2025 12:47:04] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:47:23,018 INFO 10.0.2.161 - - [25/Dec/2025 12:47:23] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:47:34,102 INFO 10.0.1.11 - - [25/Dec/2025 12:47:34] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:47:53,049 INFO 10.0.2.161 - - [25/Dec/2025 12:47:53] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:48:04,130 INFO 10.0.1.11 - - [25/Dec/2025 12:48:04] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:48:23,078 INFO 10.0.2.161 - - [25/Dec/2025 12:48:23] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:48:34,138 INFO 10.0.1.11 - - [25/Dec/2025 12:48:34] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:48:53,090 INFO 10.0.2.161 - - [25/Dec/2025 12:48:53] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:48:53,654 INFO 35.233.24.129 - - [25/Dec/2025 12:48:53] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 12:49:04,165 INFO 10.0.1.11 - - [25/Dec/2025 12:49:04] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:49:23,114 INFO 10.0.2.161 - - [25/Dec/2025 12:49:23] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:49:34,183 INFO 10.0.1.11 - - [25/Dec/2025 12:49:34] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:49:53,142 INFO 10.0.2.161 - - [25/Dec/2025 12:49:53] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:50:04,187 INFO 10.0.1.11 - - [25/Dec/2025 12:50:04] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:50:23,170 INFO 10.0.2.161 - - [25/Dec/2025 12:50:23] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:50:34,217 INFO 10.0.1.11 - - [25/Dec/2025 12:50:34] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:50:53,201 INFO 10.0.2.161 - - [25/Dec/2025 12:50:53] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:51:04,246 INFO 10.0.1.11 - - [25/Dec/2025 12:51:04] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:51:23,230 INFO 10.0.2.161 - - [25/Dec/2025 12:51:23] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:51:34,274 INFO 10.0.1.11 - - [25/Dec/2025 12:51:34] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:51:53,258 INFO 10.0.2.161 - - [25/Dec/2025 12:51:53] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:52:04,296 INFO 10.0.1.11 - - [25/Dec/2025 12:52:04] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:52:23,289 INFO 10.0.2.161 - - [25/Dec/2025 12:52:23] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:52:34,314 INFO 10.0.1.11 - - [25/Dec/2025 12:52:34] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:52:53,316 INFO 10.0.2.161 - - [25/Dec/2025 12:52:53] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:53:04,345 INFO 10.0.1.11 - - [25/Dec/2025 12:53:04] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:53:23,316 INFO 10.0.2.161 - - [25/Dec/2025 12:53:23] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:53:34,364 INFO 10.0.1.11 - - [25/Dec/2025 12:53:34] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:53:53,324 INFO 10.0.2.161 - - [25/Dec/2025 12:53:53] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:54:04,391 INFO 10.0.1.11 - - [25/Dec/2025 12:54:04] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:54:23,354 INFO 10.0.2.161 - - [25/Dec/2025 12:54:23] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:54:34,406 INFO 10.0.1.11 - - [25/Dec/2025 12:54:34] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:54:53,370 INFO 10.0.2.161 - - [25/Dec/2025 12:54:53] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:54:59,753 INFO 161.35.208.135 - - [25/Dec/2025 12:54:59] "[33mGET /odinhttpcall1766667299 HTTP/1.1[0m" 404 -
+2025-12-25 12:55:00,126 INFO 161.35.208.135 - - [25/Dec/2025 12:55:00] "[33mGET /HNAP1 HTTP/1.1[0m" 404 -
+2025-12-25 12:55:00,130 INFO 161.35.208.135 - - [25/Dec/2025 12:55:00] "[33mGET /evox/about HTTP/1.1[0m" 404 -
+2025-12-25 12:55:01,202 INFO 134.122.87.21 - - [25/Dec/2025 12:55:01] "[33mGET /v2/_catalog HTTP/1.1[0m" 404 -
+2025-12-25 12:55:01,214 INFO 46.101.117.47 - - [25/Dec/2025 12:55:01] "[33mGET /cgi-bin/authLogin.cgi HTTP/1.1[0m" 404 -
+2025-12-25 12:55:01,215 INFO 164.92.128.120 - - [25/Dec/2025 12:55:01] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 12:55:01,223 INFO 165.232.71.87 - - [25/Dec/2025 12:55:01] "[33mGET /solr/admin/info/system HTTP/1.1[0m" 404 -
+2025-12-25 12:55:01,224 INFO 167.99.249.109 - - [25/Dec/2025 12:55:01] "[33mGET /query?q=SHOW+DIAGNOSTICS HTTP/1.1[0m" 404 -
+2025-12-25 12:55:01,398 INFO 164.92.128.120 - - [25/Dec/2025 12:55:01] "[32mGET /login HTTP/1.1[0m" 302 -
+2025-12-25 12:55:01,535 INFO 165.232.71.87 - - [25/Dec/2025 12:55:01] "[33mGET /solr/admin/cores?action=STATUS&wt=json HTTP/1.1[0m" 404 -
+2025-12-25 12:55:03,031 INFO 164.92.128.120 - - [25/Dec/2025 12:55:03] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 12:55:03,190 INFO 164.92.128.120 - - [25/Dec/2025 12:55:03] "[32mGET /login HTTP/1.1[0m" 302 -
+2025-12-25 12:55:04,437 INFO 10.0.1.11 - - [25/Dec/2025 12:55:04] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:55:18,675 INFO 127.0.0.1 - - [25/Dec/2025 12:55:18] "[32mHEAD /login HTTP/1.1[0m" 302 -
+2025-12-25 12:55:23,378 INFO 10.0.2.161 - - [25/Dec/2025 12:55:23] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:55:34,467 INFO 10.0.1.11 - - [25/Dec/2025 12:55:34] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:55:53,382 INFO 10.0.2.161 - - [25/Dec/2025 12:55:53] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:56:04,494 INFO 10.0.1.11 - - [25/Dec/2025 12:56:04] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:56:23,405 INFO 10.0.2.161 - - [25/Dec/2025 12:56:23] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:56:34,525 INFO 10.0.1.11 - - [25/Dec/2025 12:56:34] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:56:53,436 INFO 10.0.2.161 - - [25/Dec/2025 12:56:53] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:56:55,279 INFO 44.202.159.217 - - [25/Dec/2025 12:56:55] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 12:56:57,750 INFO 44.202.159.217 - - [25/Dec/2025 12:56:57] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-25 12:57:04,556 INFO 10.0.1.11 - - [25/Dec/2025 12:57:04] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:57:23,466 INFO 10.0.2.161 - - [25/Dec/2025 12:57:23] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:57:34,574 INFO 10.0.1.11 - - [25/Dec/2025 12:57:34] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:57:53,497 INFO 10.0.2.161 - - [25/Dec/2025 12:57:53] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:58:04,598 INFO 10.0.1.11 - - [25/Dec/2025 12:58:04] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:58:23,528 INFO 10.0.2.161 - - [25/Dec/2025 12:58:23] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:58:34,624 INFO 10.0.1.11 - - [25/Dec/2025 12:58:34] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:58:50,290 INFO 77.83.39.157 - - [25/Dec/2025 12:58:50] "[33mGET /.git/config HTTP/1.1[0m" 404 -
+2025-12-25 12:58:53,534 INFO 10.0.2.161 - - [25/Dec/2025 12:58:53] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:59:04,655 INFO 10.0.1.11 - - [25/Dec/2025 12:59:04] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:59:23,558 INFO 10.0.2.161 - - [25/Dec/2025 12:59:23] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:59:34,682 INFO 10.0.1.11 - - [25/Dec/2025 12:59:34] "GET /health HTTP/1.1" 200 -
+2025-12-25 12:59:53,586 INFO 10.0.2.161 - - [25/Dec/2025 12:59:53] "GET /health HTTP/1.1" 200 -
+2025-12-25 13:00:04,703 INFO 10.0.1.11 - - [25/Dec/2025 13:00:04] "GET /health HTTP/1.1" 200 -
+2025-12-25 13:00:23,605 INFO 10.0.2.161 - - [25/Dec/2025 13:00:23] "GET /health HTTP/1.1" 200 -
+2025-12-25 13:00:34,729 INFO 10.0.1.11 - - [25/Dec/2025 13:00:34] "GET /health HTTP/1.1" 200 -
+2025-12-25 13:00:53,626 INFO 10.0.2.161 - - [25/Dec/2025 13:00:53] "GET /health HTTP/1.1" 200 -
+2025-12-25 13:01:04,758 INFO 10.0.1.11 - - [25/Dec/2025 13:01:04] "GET /health HTTP/1.1" 200 -
+2025-12-25 13:01:23,646 INFO 10.0.2.161 - - [25/Dec/2025 13:01:23] "GET /health HTTP/1.1" 200 -
+2025-12-25 13:01:34,789 INFO 10.0.1.11 - - [25/Dec/2025 13:01:34] "GET /health HTTP/1.1" 200 -
+2025-12-25 13:01:53,677 INFO 10.0.2.161 - - [25/Dec/2025 13:01:53] "GET /health HTTP/1.1" 200 -
+2025-12-25 13:02:04,814 INFO 10.0.1.11 - - [25/Dec/2025 13:02:04] "GET /health HTTP/1.1" 200 -
+2025-12-25 13:02:08,447 INFO 195.178.110.246 - - [25/Dec/2025 13:02:08] "[33mGET /_profiler/phpinfo HTTP/1.1[0m" 404 -
+2025-12-25 13:02:23,702 INFO 10.0.2.161 - - [25/Dec/2025 13:02:23] "GET /health HTTP/1.1" 200 -
+2025-12-26 06:17:13,856 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.11.169:5000
+2025-12-26 06:17:13,856 INFO [33mPress CTRL+C to quit[0m
+2025-12-26 06:38:52,843 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:500
